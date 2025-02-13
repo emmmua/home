@@ -1,10 +1,93 @@
 @media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
+        padding-bottom: 2rem;
+        min-height: auto;
+        height: auto;
     }
 
     .card {
         padding: 2rem;
+        margin: 1.5rem 1rem;
+        gap: 2rem;
+    }
+
+    .profile {
+        gap: 1.5rem;
+    }
+
+    .avatar-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .link-item {
+        padding: 0.7rem 1rem;
+    }
+
+    .profile {
+        border-right: none;
+        border-bottom: 1px solid var(--divider-color);
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .copyright,
+    .beian-links,
+    .source-link {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .beian-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        order: 1;
+    }
+
+    .copyright {
+        order: 2;
+    }
+
+    .source-link {
+        order: 3;
+    }
+
+    .about {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin: 1rem 0.5rem;
     }
 
     .avatar-container {
@@ -13,34 +96,49 @@
     }
 
     h1 {
-        font-size: 1.75rem;
-    }
-
-    .social-links {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .about {
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .card {
-        padding: 1.5rem;
-    }
-
-    .avatar-container {
-        width: 100px;
-        height: 100px;
-    }
-
-    h1 {
         font-size: 1.5rem;
     }
 
     .bio {
         font-size: 0.85rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .link-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .card {
+        max-width: 1400px;
+        padding: 4rem;
+    }
+
+    .avatar-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about {
+        font-size: 1.2rem;
     }
 }
